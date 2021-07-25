@@ -2,8 +2,8 @@ import React from 'react'
 
 function Workspace() {
     return (
-        <div>
-            
+        <div className="work_space">
+            This is Workspace area
         </div>
     )
 }

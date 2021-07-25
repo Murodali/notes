@@ -12,8 +12,12 @@ function ListView() {
     return (
         <div className="notes_list">
             {notes.map(note => (
+
+                <div className="notes_list_container"> 
           
-                    <ListItem title={note.title} content={note.content} key={note.id}></ListItem>
+                    <ListItem title={note.title} content={note.content} keyItem={note.id}></ListItem>
+
+                    </div>
                 
             ))}
             

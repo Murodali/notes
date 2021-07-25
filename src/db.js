@@ -1,7 +1,7 @@
 import Dexie from 'dexie';
 
 const db = new Dexie('MyNotesDataBase');
-db.version(1).stores({ notes: '++id,title,content' });
+db.version(1).stores({ notes: '++id, title, content' });
 
 
 

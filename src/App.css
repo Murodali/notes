@@ -71,3 +71,13 @@
   background-color: whitesmoke;
   height: 100vh;
 }
+
+.notes_list_container{
+  padding: 10px 10px;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.notes_list_container:hover{
+  background-color: lightgrey;
+}
