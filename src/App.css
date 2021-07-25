@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/**************************************************Header***************************************************/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  background-color: lightgrey;
   display: flex;
-  flex-direction: column;
+  padding: 8px 0;
+}
+
+.header > p{
+  margin-left: 10px;
+}
+
+.header_buttons{
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header_buttons > svg{
+  margin: 0 5px;
+}
+
+.header_buttons >svg:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header_searchbox{
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search_input{
+  border:  1px solid grey;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-right: 10px;
+
+}
+
+.search_input > input{
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.search_input > input:focus{
+  border: none;
 }
