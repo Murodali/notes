@@ -3,12 +3,16 @@
   padding: 0;
 }
 
+.app_body{
+  display: flex;
+}
 /**************************************************Header***************************************************/
 
 .header{
   background-color: lightgrey;
   display: flex;
   padding: 8px 0;
+  flex: 1;
 }
 
 .header > p{
@@ -55,4 +59,15 @@
 
 .search_input > input:focus{
   border: none;
+}
+
+/**********************************************************Sidebar****************************************************/
+
+.sidebar{
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  border-right: 1px solid lightgrey;
+  background-color: whitesmoke;
+  height: 100vh;
 }
