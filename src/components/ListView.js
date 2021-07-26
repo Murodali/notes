@@ -1,24 +1,18 @@
-import React,{useContext} from 'react'
+import React,{useContext,useState} from 'react'
 import {NotesContext} from '../context/NotesContext';
 import ListItem from '../components/ListItem';
+import Workspace from './Workspace';
+
 
 
 function ListView() {
 
-
-    const [notes,setNotes] = useContext(NotesContext);
-
+    const [notes,setNotes,selectedNote,SetselectedNote] = useContext(NotesContext);
 
     return (
         <div className="notes_list">
             {notes.map(note => (
-
-                <div className="notes_list_container"> 
-          
-                    <ListItem title={note.title} content={note.content} keyItem={note.id}></ListItem>
-
-                    </div>
-                
+                    <ListItem  key={note.id}  title={note.title} content={note.content} id={note.id} ></ListItem>
             ))}
             
         </div>

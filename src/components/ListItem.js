@@ -2,15 +2,14 @@ import React from 'react'
 import Workspace from './Workspace';
 
 
-function ListItem({title,content,keyItem}) {
+function ListItem({title,content,onNoteSelected }) {
+    <Workspace onNoteSelected></Workspace>
     return (
-        <div className="list_item" key={keyItem}>
-
+        <div className="list_item"  >
             <h3> {title}  </h3>
             <p> {content} </p>
 
-            <Workspace title={title} content={content} keyItem={keyItem} ></Workspace>
-            
+       
         </div>
     )
 }

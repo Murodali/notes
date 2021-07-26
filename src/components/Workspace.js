@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import {NotesContext} from '../context/NotesContext';
 
 function Workspace() {
+
     return (
         <div className="work_space">
-            This is Workspace area
+
         </div>
     )
 }

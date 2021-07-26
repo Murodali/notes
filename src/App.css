@@ -72,12 +72,13 @@
   height: 100vh;
 }
 
-.notes_list_container{
+.list_item{
   padding: 10px 10px;
   border-bottom: 1px solid lightgrey;
 
 }
 
-.notes_list_container:hover{
+.list_item:hover{
   background-color: lightgrey;
+  cursor: pointer;
 }
